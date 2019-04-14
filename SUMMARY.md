@@ -2,4 +2,7 @@
 
 * [介绍](README.md)
 
-## A
+## 词条
+
+* [Acceptance Testing](md/acceptance_testing.md)
+* [Accessibility Testing](md/accessibility_testing.md)
