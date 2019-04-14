@@ -1,0 +1,22 @@
+language: python
+python:
+  - "3.7"
+# command to install dependencies
+install:
+  - pip install lsbook
+# command to run tests
+script:
+  - lsbook -b -log debug .
+after_script:
+  - cd _book
+  - git init
+  - git remote add origin https://${REF}
+  - git add .
+  - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
+  - git push --force --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
+branches:
+  only:
+    - master
+env:
+  global:
+    - REF=https://github.com/liushilive/github_software_testing_dictionary.git
