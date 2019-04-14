@@ -7,7 +7,7 @@ install:
   - pip install lsbook
 # command to run tests
 script:
-  - ls -l
+  - ls
   - lsbook -b --log debug .
 after_script:
   - cd _book
