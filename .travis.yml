@@ -9,12 +9,10 @@ install:
 script:
   - ls -l
   - lsbook -b --log debug .
-after_script:
+after_success:
   - cd _book
   - ls -l
-  - git remote -v
   - git init
-  - git remote add origin https://${REF}
   - git add .
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
   - git push --force --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
@@ -24,3 +22,5 @@ branches:
 env:
   global:
     - REF=github.com/liushilive/github_software_testing_dictionary.git
+before_install:
+- export TZ='Asia/Shanghai'
