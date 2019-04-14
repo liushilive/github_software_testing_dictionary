@@ -11,7 +11,7 @@ script:
   - lsbook -b --log debug .
 after_success:
   - cd _book
-  - ls -l
+  - ls -al
   - git init
   - git add .
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
