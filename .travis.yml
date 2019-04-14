@@ -15,8 +15,10 @@ after_script:
   - git remote -v
   - git init
   - git remote add origin https://${REF}
+  - ls -l
   - git add .
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
+  - ls -l
   - git push --force --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
 branches:
   only:
