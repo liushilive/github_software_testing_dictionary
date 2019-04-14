@@ -21,4 +21,4 @@ branches:
     - master
 env:
   global:
-    - REF=https://github.com/liushilive/github_software_testing_dictionary.git
+    - REF=github.com/liushilive/github_software_testing_dictionary.git
