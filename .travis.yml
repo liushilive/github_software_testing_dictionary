@@ -11,6 +11,8 @@ script:
   - lsbook -b --log debug .
 after_script:
   - cd _book
+  - ls -l
+  - git remote -v
   - git init
   - git remote add origin https://${REF}
   - git add .
