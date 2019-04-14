@@ -17,7 +17,7 @@ after_script:
   - git remote add origin https://${REF}
   - git add .
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
-  - git push --force-with-lease --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
+  - git push --force --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
 branches:
   only:
     - master
