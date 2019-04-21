@@ -1,5 +1,7 @@
 # 软件测试词典
 
+[![Build Status](https://travis-ci.org/liushilive/github_software_testing_dictionary.svg?branch=master)](https://travis-ci.org/liushilive/github_software_testing_dictionary)
+
 测试是评估系统或其组件的过程，旨在发现它是否满足指定的要求。
 
 测试正在执行系统，以便根据实际需求或要求识别任何间隙，错误或缺少需求。
