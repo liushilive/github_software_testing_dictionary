@@ -12,3 +12,4 @@
 * [Age Testing](md/age_testing.md)
 * [Agile Testing](md/agile_testing.md)
 * [All Pair Testing](md/all_pairs_testing.md)
+* [Alpha Testing](md/alpha_testing.md)
