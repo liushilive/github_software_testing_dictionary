@@ -8,7 +8,7 @@ install:
 # command to run tests
 script:
   - ls -l
-  - lsbook -b --log debug .
+  - lsbook -ba ../asserts -b --log debug .
 after_success:
   - cd _book
   - ls -al
