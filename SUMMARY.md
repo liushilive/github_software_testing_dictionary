@@ -196,6 +196,17 @@
 * [Process Cycle Test](md/process_cycle_test.md)
 * [Progressive Testing](md/progressive_testing.md)
 * [Prototype Testing](md/prototype_testing.md)
+
+## Q
+
 * [Quality Assurance](md/quality_assurance.md)
 * [Quality Control](md/quality_control.md)
 * [Quality Management](md/quality_management.md)
+
+## R
+
+* [Random Testing](md/random_testing.md)
+* [Recovery Testing](md/recovery_testing.md)
+* [Regression Testing](md/regression_testing.md)
+* [Release Candidate](md/release_candidate.md)
+* [Release Notes](md/release_note.md)
