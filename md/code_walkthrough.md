@@ -12,6 +12,6 @@
 
 走查的主要目的是使学习有关正在走查的文档的内容，以帮助团队成员了解文档的内容，并找到缺陷。
 
-## Code Walkthrough 适合哪些地方？
+## Code Walkthrough 适合哪些地方
 
 ![Code Walkthrough](../screenshot/2019-05-28-17-36-13.png)

@@ -4,7 +4,7 @@
 
 ## 例
 
-```
+```c
 if ((A || B) && C)
 {
   << Few Statements >>
