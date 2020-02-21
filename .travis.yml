@@ -14,11 +14,14 @@ after_success:
   - git add .
   - git commit -m "Updated By Travis-CI With Build ${TRAVIS_BUILD_NUMBER} For Github Pages"
   - git push --force --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
+  - git push --force "https://liushilive:${travis_ci_password_gitee}@${REFEE}" master:master
+
 branches:
   only:
     - master
 env:
   global:
     - REF=github.com/liushilive/github_software_testing_dictionary.git
+    - REFEE=gitee.com/liushilive/github_software_testing_dictionary.git
 before_install:
 - export TZ='Asia/Shanghai'
