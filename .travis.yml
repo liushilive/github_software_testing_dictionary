@@ -14,6 +14,10 @@ after_success:
   - git add .
   - git commit -m "Updated By Travis-CI With Build ${TRAVIS_BUILD_NUMBER} For Github Pages"
   - git push --force --quiet "https://${travis_ci_tokens}@${REF}" master:gh-pages
+  - rm -rf .git
+  - git init
+  - git add .
+  - git commit -m "Updated By Travis-CI With Build ${TRAVIS_BUILD_NUMBER} For Github Pages"
   - git push --force "https://liushilive:${travis_ci_password_gitee}@${REFEE}" master:master
 
 branches:
